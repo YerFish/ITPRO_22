@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+//ПЕРЕМЕННЫЕ
+$background-color: #161617;
+
+$main-font-color: #FFF;
+$main-font: 'Ubuntu', sans-serif;
+$text-font-size: 2.6rem;
+
+$section-padding-vertical: 20rem;
+
+//ОБЩИЕ СТИЛИ
+html{
+    //чтобы 1 rem = 10px
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+
+    background-color: $background-color;
+    color: $main-font-color;
+    font: $text-font-size $main-font;
+}
+
+//--------------------
+//       ТЕКСТ
+//--------------------
+.section-heading {
+
+}
+
+.bold-heading {
+
+}
+
+//линия с тремя квадратами
+.divider {
+
+}
+
+//классы для анимации(ховер) с нижним подчеркиванием
+
+//дефолтное состояние псевдолемента (линии)
+.underline-animation::after {
+    content: '';
+    display: block;
+    height: 2px;
+    //линии не видно засчет 0 ширины
+    width: 0;
+    background-color: white;
+}
+
+//псевдоэлемент класса для активного элемента (например активной страницы)
+//класс навешивается вместе с underlined-animation !!
+.underline-animation--active::after {
+    width: 100%;
+}
+
+//состояния псевдоэлемента при наведении
+.underline-animation:hover::before {
+
+}
+
+//------------------------
+//  ОТДЕЛЬНЫЕ ЭЛЕМЕНТЫ
+//------------------------
+.social-links {
+
+}
+
+.site-nav {
+    a {
+        color: $main-font-color;
+        text-decoration: none;
+    }
+}
+
+.arrow-button {
+
+}
+
+//------------------------
+//  КОМПОНЕНТЫ СТРАНИЦЫ
+//------------------------
+.header {
+
+    .ITPRO-logo {
+
+    }
+
+}
+
+.video-section {
+
+}
+
+.logos-grid {
+
+}
+
+//контейнеры
+.container {
+
+}
+
+.zig-zag-container {
+
+}
+//каждый чётный потомок контейнера zig-zag
+.zig-zag-container:nth-child(2n) {
+
+}
+
+//------------------------
+//      ПОПАПЫ
+//------------------------
+.pop-up {
+
+}
+
+.pop-up--active {
+
+}
+
+.pop-up--hidden{
+    
+}
+
